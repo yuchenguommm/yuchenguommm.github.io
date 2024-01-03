@@ -10,7 +10,7 @@ redirect_from:
 
 I'm a first-year Ph.D. student from [Department of Physics](https://www.phys.tsinghua.edu.cn/), [Tsinghua University](https://www.tsinghua.edu.cn/). My research interests include the interplay between quantum computation, quantum information, and topological quantum matter.
 
-I am very fortunate to be advised by [Prof. Shuo Yang](https://www.phys.tsinghua.edu.cn/info/1101/4258.htm), a rising star in the field of condensed matter physics and quantum physics [Google Scholar](https://scholar.google.com/citations?user=nemjDVIAAAAJ&hl)
+I am very fortunate to be advised by [Prof. Shuo Yang](https://www.phys.tsinghua.edu.cn/info/1101/4258.htm), a rising star in the field of condensed matter physics and quantum physics ([Google Scholar](https://scholar.google.com/citations?user=nemjDVIAAAAJ&hl))
 
 You can find my CV here: [Yuchen Guo's Curriculum Vitae](../assets/CV.pdf).
 
