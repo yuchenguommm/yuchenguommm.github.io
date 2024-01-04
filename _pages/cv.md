@@ -12,14 +12,14 @@ redirect_from:
 Education
 ======
 * B.S. in Department of Physics, Tsinghua University, 2019-2023
-  ** Major in Physics
-  ** GPA： 3.94/4.0
-  ** Special scholarship for undergraduates in Tsinghua University in 2022 (Only 10 students in each year)
-  ** Outstanding graduate of Tsinghua University and Outstanding graduate of Beijing
-  ** Outstanding thesis of Tsinghua University and Outstanding thesis of Beijing
+  * Major in Physics
+  * GPA： 3.94/4.0
+  * Special scholarship for undergraduates in Tsinghua University in 2022 (Only 10 students in each year)
+  * Outstanding graduate of Tsinghua University and Outstanding graduate of Beijing
+  * Outstanding thesis of Tsinghua University and Outstanding thesis of Beijing
 * Ph.D. Student in Department of Physics, Tsinghua University, 2023-
- ** Publications in top journals including Physical Review Letters, PRX Quantum, npj Quantum Information, etc.
- ** Referee for PRL, PRX Quantum, PRR, PRA.
+  * Publications in top journals including Physical Review Letters, PRX Quantum, npj Quantum Information, etc.
+  * Referee for PRL, PRX Quantum, PRR, PRA.
   
 Research Interests
 ======
