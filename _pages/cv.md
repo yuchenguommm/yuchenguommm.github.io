@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "CV of Yuchen Guo"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -11,30 +11,22 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-
-Work experience
-======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* B.S. in Department of Physics, Tsinghua University, 2019-2023
+** Major in Physics
+** GPA： 3.94/4.0
+** Special scholarship for undergraduates in Tsinghua University in 2022 (Only 10 students in each year)
+** Outstanding graduate of Tsinghua University and Outstanding graduate of Beijing
+** Outstanding thesis of Tsinghua University and Outstanding thesis of Beijing
+* Ph.D. Student in Department of Physics, Tsinghua University, 2023-
+** Publications in top journals including Physical Review Letters, PRX Quantum, npj Quantum Information, etc.
+** Referee for PRL, PRX Quantum, PRR, PRA.
   
-Skills
+Research Interests
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+My studies focus on the problems in quantum computation, quantum information, and topological quantum matter with the tool of tensor network (TN) family.
+* Developing new quantum computation techniques
+* Discovering novel topological quantum matter
+* Exploring the interplay between noise and entanglement
 
 Publications
 ======
@@ -48,12 +40,3 @@ Talks
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
   
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
