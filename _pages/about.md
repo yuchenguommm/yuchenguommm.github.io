@@ -21,8 +21,8 @@ I have published several research articles in top journals including Physical Re
 
 [Email](guo-yc23@mails.tsinghua.edu.cn) / [Google Scholar](https://scholar.google.com/citations?user=ZbaW22gAAAAJ&hl) / [ResearchGate](https://www.researchgate.net/profile/Yuchen-Guo-31) / [ORCID](https://orcid.org/0000-0002-4901-2737)
 
-Speech at the graduation ceremony
+**Speech at the graduation ceremony**
 <br/><img src='/images/Xuetang.png'>
 
-With his girlfriend
+**With his girlfriend**
 <br/><img src='/images/Cat.png'>
