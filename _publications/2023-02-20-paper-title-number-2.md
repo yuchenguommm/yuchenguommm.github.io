@@ -2,8 +2,8 @@
 ---
 title: "Noise effects on purity and quantum entanglement in terms of physical implementability"
 collection: publications
-permalink: /publication/2023-02-20-paper-title-number-2.md
-excerpt: 'Two universal and concise inequality describing the destructive effects of quantum noise on purity and quantum entanglement.'
+permalink: /publication/2023-02-20-paper-title-number-2
+excerpt: 'Two universal and concise inequations describing the destructive effects of quantum noise on purity and quantum entanglement.'
 date: 2023-02-20
 venue: 'npj Quantum Information'
 paperurl: 'https://www.nature.com/articles/s41534-023-00680-1'
