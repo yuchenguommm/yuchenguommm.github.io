@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV of Yuchen Guo"
+title: "Yuchen Guo's Curriculum Vitae (A PDF version available here: [CV of Yuchen Guo](../assets/CV.pdf))"
 permalink: /cv/
 author_profile: true
 redirect_from:
