@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Yuchen Guo"
+title: "Yuchen Guo (he/his/him)"
 excerpt: "Yuchen Guo"
 author_profile: true
 redirect_from: 
@@ -16,5 +16,8 @@ You can find my CV here: [Yuchen Guo's Curriculum Vitae](cv/).
 
 [Email](guo-yc23@mails.tsinghua.edu.cn) / [Google Scholar](https://scholar.google.com/citations?user=ZbaW22gAAAAJ&hl) / [ResearchGate](https://www.researchgate.net/profile/Yuchen-Guo-31) / [ORCID](https://orcid.org/0000-0002-4901-2737)
 
+Speech at the graduation ceremony
 <br/><img src='/images/Xuetang.png'>
+
+With his girlfriend
 <br/><img src='/images/Cat.png'>
