@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Yuchen Guo"
-  avatar           : "images/Russian.png"
+  avatar           : "images/profile.png"
   bio              : "I am a PhD candidate in the Department of Physics, Tsinghua University. My major research interests include the interplay between quantum computation, quantum information, and topological quantum matter."
   location         : "Beijing"
   employer         :
