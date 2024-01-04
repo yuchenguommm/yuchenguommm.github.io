@@ -1,13 +1,11 @@
-
 ---
-title: "Noise effects on purity and quantum entanglement in terms of physical implementability"
+title: "Quantum Error Mitigation via Matrix Product Operators"
 collection: publications
 permalink: /publication/2023-02-20-paper-title-number-2
-excerpt: 'Two universal and concise inequations describing the destructive effects of quantum noise on purity and quantum entanglement.'
+excerpt: 'A new error mitigation approach based on the tensor network representation of the noise channels.'
 date: 2023-02-20
-venue: 'npj Quantum Information'
-paperurl: 'https://www.nature.com/articles/s41534-023-00680-1'
-citation: 'Yuchen Guo and Shuo Yang, npj Quantum Inf. 9, 11 (2023).'
+venue: 'PRX Quantum'
+paperurl: 'https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.3.040313'
+citation: 'Yuchen Guo and Shuo Yang, PRX Quantum 3, 040313 (2022).'
 ---
-
-Quantum decoherence due to imperfect manipulation of quantum devices is a key issue in the noisy intermediate-scale quantum (NISQ) era. Standard analyses in quantum information and quantum computation use error rates to parameterize quantum noise channels. However, there is no explicit relation between the decoherence effect induced by a noise channel and its error rate. In this work, we propose to characterize the decoherence effect of a noise channel by the physical implementability of its inverse, which is a universal parameter quantifying the difficulty to simulate the noise inverse with accessible quantum channels. We establish two concise inequalities connecting the decrease of the state purity and logarithmic negativity after a noise channel to the physical implementability of the noise inverse, which is required to be decomposed as mutually orthogonal unitaries or product channels respectively. Our results are numerically demonstrated on several commonly adopted two-qubit noise models. We believe that these relations contribute to the theoretical research on the entanglement properties of noise channels and provide guiding principles for quantum circuit design.
+In the era of noisy intermediate-scale quantum devices, the number of controllable hardware qubits is insufficient to implement quantum error correction. As an alternative, quantum error mitigation (QEM) can suppress errors in measurement results via repeated experiments and postprocessing of data. Typical techniques for error mitigation, e.g., the quasiprobability decomposition method, ignore correlated errors between different gates. Here, we introduce a QEM method based on the matrix product operator (MPO) representation of a quantum circuit that can characterize the noise channel with polynomial complexity. Our technique is demonstrated on a depth = 20 fully parallel quantum circuit of up to Nq = 20 qubits undergoing local and global noise. The circuit error is reduced by a several-times factor with only a small bond dimension D' = 1 for the noise channel. The MPO representation increases the accuracy of modeling noise without consuming more experimental resources, which improves the QEM performance and broadens its scope of application. Our method is hopeful of being applied to circuits in higher dimensions with more qubits and deeper depth.
