@@ -24,7 +24,7 @@ Education
   
 Research Interests
 ======
-My studies focus on the problems in quantum computation, quantum information, and topological quantum matter with the tool of tensor network (TN) family.
+My studies focus on solving the problems in quantum computation, quantum information, and topological quantum matter with the tool of tensor network (TN) family.
 * Developing new quantum computation techniques
 * Discovering novel topological quantum matter
 * Exploring the interplay between noise and entanglement
