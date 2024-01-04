@@ -1,7 +1,7 @@
 ---
 title: "Quantum Error Mitigation via Matrix Product Operators"
 collection: publications
-permalink: /publication/2022-10
+permalink: /publication/2015-10-01-paper-title-number-3
 excerpt: ''
 date: 2022-10
 venue: 'PRX Quantum'
