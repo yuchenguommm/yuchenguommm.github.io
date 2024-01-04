@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Yuchen Guo's Curriculum Vitae (A PDF version available here: [CV of Yuchen Guo](../assets/CV.pdf))"
+title: "Yuchen Guo's Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -8,7 +8,8 @@ redirect_from:
 ---
 
 {% include base_path %}
-
+ (A PDF version available here: [CV of Yuchen Guo](../assets/CV.pdf))
+ 
 Education
 ======
 * B.S. in Department of Physics, Tsinghua University, 2019-2023
