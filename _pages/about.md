@@ -17,3 +17,4 @@ You can find my CV here: [Yuchen Guo's Curriculum Vitae](cv/).
 [Email](guo-yc23@mails.tsinghua.edu.cn) / [Google Scholar](https://scholar.google.com/citations?user=ZbaW22gAAAAJ&hl) / [ResearchGate](https://www.researchgate.net/profile/Yuchen-Guo-31) / [ORCID](https://orcid.org/0000-0002-4901-2737)
 
 <br/><img src='/images/Xuetang.png'>
+<br/><img src='/images/Cat.png'>
