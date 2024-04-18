@@ -26,4 +26,7 @@ I have published several research articles in top journals including Physical Re
 
 **With his girlfriend**
 <br/><img src='/images/Cat1.png'>
-<br/><img src='/images/Cat2.png'><img src='/images/Cat3.png'>
+<center class ='img'>
+<img src='/images/Cat2.png' width="45%">
+<img src='/images/Cat3.png' width="45%">
+</center>
