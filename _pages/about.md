@@ -25,4 +25,5 @@ I have published several research articles in top journals including Physical Re
 <br/><img src='/images/Xuetang.png'>
 
 **With his girlfriend**
-<br/><img src='/images/Cat.png'>
+<br/><img src='/images/Cat1.png'>
+<br/><img src='/images/Cat2.png'>
