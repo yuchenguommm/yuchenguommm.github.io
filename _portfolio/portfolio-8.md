@@ -1,5 +1,5 @@
 ---
-title: "Chinese Zither Concerto by Rui Wang"
+title: "[Chinese Zither Concerto by Rui Wang](http://xhslink.com/a/PjKHy9Ofil5ab)"
 excerpt: " <br/><img src='/images/Sea.png'>"
 collection: portfolio
 ---
