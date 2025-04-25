@@ -1,9 +1,9 @@
 ---
 title: "Locally Purified Density Operators for Symmetry-Protected Topological Phases in Mixed States"
 collection: publications
-permalink: /publication/2025-05-paper-title-number_8
+permalink: /publication/2025-05-31-paper-title-number_8
 excerpt: 'Tensor network formulation for classification and construction of topological phases in open systems'
-date: 2025-05
+date: 2025-05-31
 venue: 'Physical Review X'
 paperurl: 'https://arxiv.org/abs/2403.16978'
 citation: 'Yuchen Guo, Jian-Hao Zhang, Hao-Ran Zhang, Shuo Yang, and Zhen Bi, Phys. Rev. X (2025).'
