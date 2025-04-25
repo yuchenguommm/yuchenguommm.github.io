@@ -1,9 +1,9 @@
 ---
 title: "Locally purified density operators for noisy quantum circuits"
 collection: publications
-permalink: /publication/2024-12-paper-title-number_7
+permalink: /publication/2024-12-31-paper-title-number_7
 excerpt: 'Exploring the capacity of tensor network in simulating noisy quantum circuits'
-date: 2024-12
+date: 2024-12-31
 venue: 'Chinese Physics Letters'
 paperurl: 'https://cpl.iphy.ac.cn/article/cstr/32039.14.0256-307X.41.12.120302'
 citation: 'Yuchen Guo and Shuo Yang, Chin. Phys. Lett. 41, 120302 (2024).'
