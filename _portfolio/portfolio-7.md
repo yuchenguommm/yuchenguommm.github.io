@@ -1,6 +1,6 @@
 ---
 title: "Chinese Zither Concerto by Le Liu"
-excerpt: " <br/><img src='/images/Zither.png'>"
+excerpt: " <br/><img src='/images/You.png'>"
 collection: portfolio
 ---
 
