@@ -1,7 +1,7 @@
 ---
 title: "Strong-to-weak spontaneous symmetry breaking meets average symmetry-protected topological order"
 collection: publications
-permalink: /publication/2025-05-12-paper-title-number_9
+permalink: /publication/2025-05-12-paper-title-number_8
 excerpt: 'A new quantum phase in open systems with the coexistence of symmetry-protected topological order and spontaneous symmetry-breaking order'
 date: 2025-05-12
 venue: 'Physical Review B (Letter, Editors' Suggestion)'
