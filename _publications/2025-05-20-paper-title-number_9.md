@@ -1,7 +1,7 @@
 ---
 title: "Locally Purified Density Operators for Symmetry-Protected Topological Phases in Mixed States"
 collection: publications
-permalink: /publication/2025-05-20-paper-title-number_8
+permalink: /publication/2025-05-20-paper-title-number_9
 excerpt: 'Tensor network formulation for classification and construction of topological phases in open systems'
 date: 2025-05-20
 venue: 'Physical Review X'
