@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2025-05-12-paper-title-number_8
 excerpt: 'A new quantum phase in open systems with the coexistence of symmetry-protected topological order and spontaneous symmetry-breaking order'
 date: 2025-05-12
-venue: 'Physical Review B (Letter, Editors' Suggestion)'
+venue: 'Physical Review B'
 paperurl: 'https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.L201108'
 citation: 'Yuchen Guo and Shuo Yang, Phys. Rev. B 111, L201108 (2025).'
 ---
