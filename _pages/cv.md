@@ -15,7 +15,7 @@ Education
 * B.Sc. in Department of Physics, Tsinghua University, 2019-2023
   * Major in Physics
   * GPA： 3.94/4.0
-  * Premium Undergraduate Scholarship of Tsinghua University in 2022 (清华特奖 in Chinese, Only 10 students in each year)
+  * Tsinghua University Special Scholarship in 2022 (the highest honor for only 10 students in each year, known as 清华特奖 in Chinese)
   * Outstanding graduate of Tsinghua University and Outstanding graduate of Beijing
   * Outstanding thesis of Tsinghua University and Outstanding thesis of Beijing
 * Ph.D. Student in Department of Physics, Tsinghua University, 2023-
