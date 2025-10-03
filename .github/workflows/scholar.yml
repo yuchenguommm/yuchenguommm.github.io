@@ -40,9 +40,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          if ! git diff --quiet; then
+          # 如果有修改或者新增文件就提交
+          if ! git diff --quiet || ! git diff --cached --quiet || [ -n "$(git ls-files --others --exclude-standard)" ]; then
             git add assets/images/scholar.png assets/images/scholar.txt
-            git commit -m "chore: update scholar screenshot [skip ci]"
+            git commit -m "chore: update scholar screenshot [skip ci]" || echo "Nothing to commit"
             git pull --rebase
             git push
           else
