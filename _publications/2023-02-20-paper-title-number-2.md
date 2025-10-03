@@ -6,7 +6,7 @@ excerpt: 'Two universal and concise inequations describing the destructive effec
 date: 2023-02-20
 venue: 'npj Quantum Information'
 paperurl: 'https://www.nature.com/articles/s41534-023-00680-1'
-citation: 'Yuchen Guo and Shuo Yang, npj Quantum Inform. 9, 11 (2023).'
+citation: 'Yuchen Guo and Shuo Yang, <i>npj Quantum Inform.</i> 9, 11 (2023).'
 tags: ["quantum-computation"]
 selected: True
 priority: 4

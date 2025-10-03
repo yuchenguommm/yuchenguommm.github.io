@@ -6,7 +6,7 @@ excerpt: 'Tensor network formulation for classification and construction of topo
 date: 2025-05-20
 venue: 'Physical Review X'
 paperurl: 'https://journals.aps.org/prx/abstract/10.1103/PhysRevX.15.021060'
-citation: 'Yuchen Guo, Jian-Hao Zhang, Hao-Ran Zhang, Shuo Yang, and Zhen Bi, Phys. Rev. X 15, 021060 (2025).'
+citation: 'Yuchen Guo<sup>#</sup>, Jian-Hao Zhang<sup>#</sup>, Hao-Ran Zhang, Shuo Yang, and Zhen Bi, <i>Phys. Rev. X</i> 15, 021060 (2025).'
 selected: True
 tags: ["lpdo"]
 priority: 1

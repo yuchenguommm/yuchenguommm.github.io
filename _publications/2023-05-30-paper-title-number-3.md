@@ -6,7 +6,7 @@ excerpt: 'A new parent Hamiltonian method for systematically constructing non-He
 date: 2023-05-30
 venue: 'Physical Review Letters'
 paperurl: 'https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.220401'
-citation: 'Ruohan Shen, Yuchen Guo, and Shuo Yang, Phys. Rev. Lett. 130, 220401 (2023).'
+citation: 'Ruohan Shen<sup>#</sup>, Yuchen Guo<sup>#</sup>, and Shuo Yang, <i>Phys. Rev. Lett.</i> 130, 220401 (2023).'
 selected: True
 tags: ["open-system"]
 priority: 3

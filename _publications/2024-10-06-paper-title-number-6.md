@@ -6,7 +6,7 @@ excerpt: 'A new quantum state tomography method based on tensor network represen
 date: 2024-10-06
 venue: 'Communications Physics'
 paperurl: 'https://www.nature.com/articles/s42005-024-01813-4'
-citation: 'Yuchen Guo and Shuo Yang, Commun. Phys. 7, 322 (2024).'
+citation: 'Yuchen Guo and Shuo Yang, <i>Commun. Phys.</i> 7, 322 (2024).'
 selected: True
 tags: ["lpdo"]
 priority: 6

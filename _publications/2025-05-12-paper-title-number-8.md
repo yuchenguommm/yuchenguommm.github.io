@@ -6,7 +6,7 @@ excerpt: 'A new quantum phase in open systems with the coexistence of symmetry-p
 date: 2025-05-12
 venue: 'Physical Review B'
 paperurl: 'https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.L201108'
-citation: 'Yuchen Guo and Shuo Yang, Phys. Rev. B 111, L201108 (2025).'
+citation: 'Yuchen Guo and Shuo Yang, <i>Phys. Rev. B</i> 111, L201108 (2025).'
 selected: True
 tags: ["open-system"]
 priority: 5
