@@ -19,9 +19,10 @@ redirect_from:
 
 ## Honors & Fellowships
 - **National Scholarship for Ph.D. Students (博士生国奖)**, 2025  
-- **NSFC Young Student Basic Research Project (国自然（博士研究生）)**, 2025  
-- **Tsinghua University Special Scholarship (清华特奖)**, 2022  
-- Outstanding Graduate & Outstanding Thesis of Tsinghua University and Beijing, 2023  
+- **NSFC Young Student Basic Research Project (博士生国自然基金)**, 2025  
+- **Tsinghua University Special Scholarship (the highest honor for only 10 students in each year, 清华特奖)**, 2022  
+-	Outstanding Graduate of Tsinghua University and Beijing (清华/北京优毕), 2023
+-	Outstanding Bachelor Thesis of Tsinghua University and Beijing (清华/北京优毕设), 2023
 
 ## Research Interests
 - Tensor-network approaches for **quantum computation** and **open quantum systems**  
