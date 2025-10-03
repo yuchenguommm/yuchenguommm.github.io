@@ -11,6 +11,16 @@ author_profile: true
 
 {% include base_path %}
 
+## Published / In press
+
 {% for post in site.publications reversed %}
+  {% include archive-single.html %}
+{% endfor %}
+
+---
+
+## Preprints / Under Review
+
+{% for post in site.preprints reversed %}
   {% include archive-single.html %}
 {% endfor %}
