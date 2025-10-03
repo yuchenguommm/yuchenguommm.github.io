@@ -18,7 +18,7 @@ I'm a **third-year Ph.D. student** in the [Department of Physics](https://www.ph
 
 ## News / Updates
 - **Oct 2025** — Oral presentation at **APPC16** (Asia Pacific Physics Conference).  
-- **Spring–Summer 2026 (planned)** — Visiting PhD student at **Max Planck Institute of Quantum Optics (MPQ)** with **Prof. J. I. Cirac**.  
+- **Mar–Aug 2026 (planned)** — Visiting student at **Max Planck Institute of Quantum Optics (MPQ)** with **Prof. J. I. Cirac**.  
 - **Recent honors** — National Scholarship for Ph.D. Students; **NSFC Young Student Basic Research Project (PhD)**.  
 - **Manuscript status** — *A New Framework for Quantum Phases in Open Systems* (ROPP), revised and resubmitted.
 

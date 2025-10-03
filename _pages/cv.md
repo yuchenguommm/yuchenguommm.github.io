@@ -12,7 +12,7 @@ redirect_from:
 📄 A PDF version is available here: [Download full CV](../assets/CV.pdf)
 
 ## Education
-- **Ph.D. in Physics**, Tsinghua University (2023 – present)  
+- **Ph.D. Candidate in Physics**, Tsinghua University (2023 – present)  
   GPA: 3.99/4.0, Rank 1/73  
 - **B.Sc. in Physics**, Tsinghua University (2019 – 2023)  
   GPA: 3.94/4.0, Rank 1/54  
