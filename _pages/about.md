@@ -11,8 +11,7 @@ redirect_from:
 *"To establish a unifying framework that connects theoretical tensor-network tools with experimental quantum computing platforms, enabling robust characterization and control of open-system quantum phases."*
 
 I'm a **third-year Ph.D. student** in the [Department of Physics](https://www.phys.tsinghua.edu.cn/), [Tsinghua University](https://www.tsinghua.edu.cn/), working on tensor-network approaches to **quantum computation**, **open quantum systems**, and **topological phases**. My long-term goal is to develop theoretical and experimental strategies to characterize and control quantum phases in realistic noisy quantum systems. I am very fortunate to be advised by **Prof. Shuo Yang** ([homepage](https://sites.google.com/view/shuoyang1984)).
-
-### Research focus
+### Research Focus
 - Developing new quantum computation techniques  
 - Discovering novel topological quantum matter  
 - Exploring the interplay between noise/dissipation and entanglement
