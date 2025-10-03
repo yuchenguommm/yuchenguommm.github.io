@@ -21,7 +21,7 @@ def main():
         # 使用本机 Chrome，并复用你平时的配置（避免验证码）
         browser = p.chromium.launch_persistent_context(
             user_data_dir=r"C:\Temp\playwright_profile", 
-            headless=False,
+            headless=True,
             channel="chrome"
         )
 
