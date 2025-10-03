@@ -36,7 +36,7 @@ jobs:
       - name: Run screenshot script
         run: |
           python scripts/update_scholar.py
-          ls -lh /images/ || true
+          ls -lh assets/images/ || true
 
       - name: Commit & push if changed
         run: |
@@ -44,7 +44,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           # 仅当文件有变化时才提交
           if ! git diff --quiet; then
-            git add /images/scholar.png /images/scholar.txt
+            git add assets/images/scholar.png assets/images/scholar.txt
             git commit -m "chore: update scholar screenshot [skip ci]"
             # 尝试避免非快进错误
             git pull --rebase
