@@ -53,6 +53,8 @@ author_profile: true
 
 ## Preprints / Under Review
 
+<ul>
 {% for post in site.preprints reversed %}
   {% include archive-single.html %}
 {% endfor %}
+<ul>

@@ -34,19 +34,23 @@ redirect_from:
   {% if post.selected == true %}
     {% if post.citation contains "Phys. Rev. X 15, 021060 (2025)" %}
       <li><b><a href="{{ post.paperurl }}">{{ post.title }}</a></b><br/>
-      <i>{{ post.venue }}</i><br/>
+      <i>{{ post.citation }}</i><br/><li>
     {% endif %}
     {% if post.citation contains "PRX Quantum 3, 040313 (2022)" %}
-      <li> ... </li>
+      <li><b><a href="{{ post.paperurl }}">{{ post.title }}</a></b><br/>
+      <i>{{ post.citation }}</i><br/><li>
     {% endif %}
     {% if post.citation contains "Phys. Rev. Lett. 135, 116504 (2025)" %}
-      <li> ... </li>
+      <li><b><a href="{{ post.paperurl }}">{{ post.title }}</a></b><br/>
+      <i>{{ post.citation }}</i><br/><li>
     {% endif %}
     {% if post.citation contains "Commun. Phys. 7, 322 (2024)" %}
-      <li> ... </li>
+      <li><b><a href="{{ post.paperurl }}">{{ post.title }}</a></b><br/>
+      <i>{{ post.citation }}</i><br/><li>
     {% endif %}
     {% if post.citation contains "Phys. Rev. B 111, L201108 (2025)" %}
-      <li> ... </li>
+      <li><b><a href="{{ post.paperurl }}">{{ post.title }}</a></b><br/>
+      <i>{{ post.citation }}</i><br/><li>
     {% endif %}
   {% endif %}
 {% endfor %}
