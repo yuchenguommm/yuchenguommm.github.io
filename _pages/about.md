@@ -29,7 +29,7 @@ I'm a **third-year Ph.D. student** in the [Department of Physics](https://www.ph
 {% for post in selected_pubs %}
   <li><b><a href="{{ post.paperurl }}">{{ post.title }}</a></b><br/>
   {{ post.citation | replace: "Yuchen Guo", "<b>Yuchen Guo</b>" }}<br/>
-  <small>{{ post.excerpt }}</small></li>
+  {{ post.excerpt }}</li>
 {% endfor %}
 </ul>
 
