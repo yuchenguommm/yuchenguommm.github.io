@@ -11,11 +11,45 @@ author_profile: true
 
 {% include base_path %}
 
-## Published
+## 1. Quantum Computation & Information
 
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
+<ul>
+{% for post in site.publications %}
+  {% if post.tags contains "quantum-computation" %}
+    {% include archive-single.html %}
+  {% endif %}
 {% endfor %}
+</ul>
+
+## 2. Locally Purified Density Operators
+
+<ul>
+{% for post in site.publications %}
+  {% if post.tags contains "lpdo" %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+</ul>
+
+## 3. Non-Hermitian Physics & Open Systems
+
+<ul>
+{% for post in site.publications %}
+  {% if post.tags contains "open-system" %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+</ul>
+
+## 4. Strongly-Correlated Electron Systems
+
+<ul>
+{% for post in site.publications %}
+  {% if post.tags contains "correlated-electrons" %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+</ul>
 
 ## Preprints / Under Review
 
