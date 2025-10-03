@@ -3,7 +3,6 @@ from datetime import datetime
 from pathlib import Path
 
 from playwright.sync_api import sync_playwright
-from playwright_stealth import stealth_sync
 
 # ===== 配置区（只改 SCHOLAR_USER 即可） =====
 SCHOLAR_USER = "ZbaW22gAAAAJ"  # 例如：SCHOLAR_USER = "AbCdEfGhIjK"
@@ -41,7 +40,6 @@ def main():
             viewport={"width": VIEWPORT_W, "height": VIEWPORT_H},
         )
         page = context.new_page()
-        stealth_sync(page)  # 降低被识别为自动化的概率
 
         page.goto(SCHOLAR_URL, wait_until="domcontentloaded", timeout=60000)
 
