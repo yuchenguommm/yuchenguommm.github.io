@@ -46,10 +46,11 @@ def main():
         # 可能遇到隐私/同意页
         accept_consent(page)
 
-        # 等待个人资料区加载出来
-        page.wait_for_selector("#gsc_prf_w", timeout=WAIT_SEC * 1000)
-
-        # 截全页（更稳妥），也可改成只截右侧统计栏：#gsc_rsb
+        try:
+            page.wait_for_selector("#gsc_prf_w", timeout=30000)
+        except:
+            print("⚠️ 没找到 #gsc_prf_w，直接截图整个页面以调试")
+        
         page.screenshot(path=str(OUT_PATH), full_page=True)
 
         # 也顺手写一个时间戳，便于你在页面上显示“更新于”
