@@ -2,19 +2,16 @@ name: Update Google Scholar screenshot
 
 on:
   schedule:
-    # GitHub Actions 用 UTC。这里每天 19:00 UTC 运行 ≈ 新加坡 03:00（次日）：
+    # 每天 19:00 UTC 运行（新加坡时间 03:00）
     - cron: "0 19 * * *"
-  workflow_dispatch: {}  # 允许手动触发，便于你测试
+  workflow_dispatch: {}  # 手动触发
 
 permissions:
-  contents: write  # 允许推回仓库
+  contents: write  # 允许写入仓库
 
 jobs:
   update-scholar:
     runs-on: ubuntu-latest
-    concurrency:
-      group: scholar-screenshot
-      cancel-in-progress: false
 
     steps:
       - name: Checkout
@@ -30,23 +27,22 @@ jobs:
       - name: Install Python deps
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install playwright
           python -m playwright install --with-deps chromium
 
       - name: Run screenshot script
         run: |
           python scripts/update_scholar.py
-          ls -lh assets/images/ || true
+          ls -lh assets/images/
 
       - name: Commit & push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          # 仅当文件有变化时才提交
+
           if ! git diff --quiet; then
             git add assets/images/scholar.png assets/images/scholar.txt
             git commit -m "chore: update scholar screenshot [skip ci]"
-            # 尝试避免非快进错误
             git pull --rebase
             git push
           else
