@@ -17,8 +17,6 @@ author_profile: true
   {% include archive-single.html %}
 {% endfor %}
 
----
-
 ## Preprints / Under Review
 
 {% for post in site.preprints reversed %}

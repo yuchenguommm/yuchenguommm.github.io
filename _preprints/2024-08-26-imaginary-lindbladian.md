@@ -1,6 +1,6 @@
 ---
 title: "A New Framework for Quantum Phases in Open Systems: Steady State of Imaginary-Time Lindbladian Evolution"
-collection: preprints
+collection: publications
 permalink: /preprint/2024-08-26-imaginary-lindbladian
 excerpt: 'Imaginary-time Lindbladian formalism for classification of open-system quantum phases'
 date: 2024-08-26

@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Talks and Presentations"
+title: "Talks"
 permalink: /talks/
 author_profile: true
 ---
@@ -9,16 +9,14 @@ author_profile: true
 <p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
 {% endif %}
 
-## Upcoming Talks
+<h2>Upcoming Talks</h2>
 
 {% assign futuretalks = site.talks | where_exp: "item", "item.date > site.time" | sort: "date" %}
 {% for post in futuretalks %}
   {% include archive-single-talk.html %}
 {% endfor %}
 
----
-
-## Past Talks
+<h2>Past Talks</h2>
 
 {% assign pasttalks = site.talks | where_exp: "item", "item.date <= site.time" | sort: "date" | reverse %}
 {% for post in pasttalks %}
