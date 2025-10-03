@@ -4,10 +4,17 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
+from pathlib import Path
+
+# 仓库根目录
+REPO_ROOT = Path(__file__).resolve().parents[1]
+
+# 正确的保存路径（在仓库里）
+OUT_PATH = REPO_ROOT / "assets" / "images" / "scholar.png"
+
 # ===== 配置区（只改 SCHOLAR_USER 即可） =====
 SCHOLAR_USER = "ZbaW22gAAAAJ"  # 例如：SCHOLAR_USER = "AbCdEfGhIjK"
 SCHOLAR_URL = f"https://scholar.google.com/citations?user={SCHOLAR_USER}&hl=en"
-OUT_PATH = Path("assets/images/scholar.png")   # 固定文件名，页面里只需引用这一个
 VIEWPORT_W, VIEWPORT_H = 1280, 2000            # 视窗大小，可按需调整
 WAIT_SEC = 10                                  # 最长等待时间（秒）
 # ==========================================
