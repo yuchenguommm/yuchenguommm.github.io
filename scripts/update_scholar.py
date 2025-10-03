@@ -8,7 +8,7 @@ from playwright_stealth import stealth_sync
 # ===== 配置区（只改 SCHOLAR_USER 即可） =====
 SCHOLAR_USER = "ZbaW22gAAAAJ"  # 例如：SCHOLAR_USER = "AbCdEfGhIjK"
 SCHOLAR_URL = f"https://scholar.google.com/citations?user={SCHOLAR_USER}&hl=en"
-OUT_PATH = Path("assets/images/scholar.png")   # 固定文件名，页面里只需引用这一个
+OUT_PATH = Path("/images/scholar.png")   # 固定文件名，页面里只需引用这一个
 VIEWPORT_W, VIEWPORT_H = 1280, 2000            # 视窗大小，可按需调整
 WAIT_SEC = 10                                  # 最长等待时间（秒）
 # ==========================================
