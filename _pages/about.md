@@ -49,3 +49,11 @@ I'm a **third-year Ph.D. student** in the [Department of Physics](https://www.ph
 
 <br/>
 <img src="/images/scholar.png" alt="Google Scholar daily snapshot" />
+
+<style>
+.page__content p, 
+.page__content li {
+  text-align: justify;
+  text-justify: inter-word;
+}
+</style>
