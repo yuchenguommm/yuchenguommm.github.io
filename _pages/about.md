@@ -50,10 +50,37 @@ I'm a **third-year Ph.D. student** in the [Department of Physics](https://www.ph
 <br/>
 <img src="/images/scholar.png" alt="Google Scholar daily snapshot" />
 
+<div id="geo-stats"></div>
+
+<script>
+(async function(){
+  const site = "yuchenguommm.github.io"; // 改成你的域名
+  const res = await fetch(`https://plausible.io/api/v1/stats/breakdown?site_id=${site}&period=30d&property=country`);
+  const data = await res.json();
+
+  // 渲染成表格
+  const rows = data.results
+    .sort((a,b)=>b.visitors - a.visitors)
+    .slice(0,10)
+    .map(r=>`<tr><td>${r.country}</td><td style="text-align:right">${r.visitors}</td></tr>`)
+    .join("");
+
+  document.getElementById("geo-stats").innerHTML = `
+    <h3>Visitors by Country (last 30 days)</h3>
+    <table style="width:100%;max-width:400px;border-collapse:collapse">
+      <thead><tr><th style="text-align:left">Country</th><th style="text-align:right">Visits</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table>`;
+})();
+</script>
+
 <style>
 .page__content p, 
 .page__content li {
   text-align: justify;
   text-justify: inter-word;
 }
+#geo-stats table {font-size:0.95em; margin-top:8px;}
+#geo-stats th, #geo-stats td {padding:4px 6px; border-bottom:1px solid #eee;}
+#geo-stats h3 {margin-bottom:0;}
 </style>
