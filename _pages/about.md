@@ -19,9 +19,8 @@ I'm a **third-year Ph.D. student** in the [Department of Physics](https://www.ph
 ## News / Updates
 - **Oct 2025** — Oral presentation at **APPC16** (Asia Pacific Physics Conference).  
 - **Mar–Aug 2026 (planned)** — Visiting student at **Max Planck Institute of Quantum Optics (MPQ)** with **Prof. J. I. Cirac**.  
-- **Recent honors** — **National Scholarship for Ph.D. Students**.
-<!-- - ; **NSFC Young Student Basic Research Project (PhD)**.   -->
-- **Manuscript status** — Our paper on imaginary-time Lindbladian framework is published by **Reports on Progress in Physics** and will be featured by **Physics World**.
+- **Recent honors** — **National Scholarship for Ph.D. Students**; **NSFC Young Student Basic Research Project (PhD)**.  
+- **Manuscript status** — Our paper on imaginary-time Lindbladian framework is published by **Reports on Progress in Physics**.
 
 ## Selected Publications
 
