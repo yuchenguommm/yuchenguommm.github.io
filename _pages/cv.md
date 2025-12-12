@@ -19,7 +19,7 @@ redirect_from:
 
 ## Honors & Fellowships
 - **National Scholarship for Ph.D. Students (博士生国奖)**, 2025  
-- **NSFC Young Student Basic Research Project (博士生国自然基金)**, 2025  
+- **NSFC Young Student Basic Research Project (国自然博士生专项)**, 2025  
 - **Tsinghua University Special Scholarship (the highest honor for only 10 students in each year, 清华特奖)**, 2022  
 -	Outstanding Graduate of Tsinghua University and Beijing (清华/北京优秀毕业生), 2023
 -	Outstanding Bachelor Thesis of Tsinghua University and Beijing (清华/北京优秀毕设), 2023
