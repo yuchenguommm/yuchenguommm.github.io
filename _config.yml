@@ -76,8 +76,11 @@ social:
 goatcounter_code         : "yuchenguommm"
 
 # Analytics
+# Visitor tracking is GoatCounter (see goatcounter_code above). The old
+# google-universal provider was emitting ga('create','') with no property ID --
+# a dead request to a service Google retired -- so it is switched off.
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               : false # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          :
 
