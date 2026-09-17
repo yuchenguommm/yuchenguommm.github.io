@@ -71,6 +71,10 @@ social:
   links: # An array of links to social media profiles
 
 
+# Visitor map -- see /visitors/ and scripts/update_visitor_stats.py
+# Set this to the <code> in <code>.goatcounter.com to switch tracking on.
+goatcounter_code         : ""
+
 # Analytics
 analytics:
   provider               :  "google-universal" # false (default), "google", "google-universal", "custom"

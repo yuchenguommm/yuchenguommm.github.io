@@ -1,0 +1,245 @@
+---
+layout: archive
+title: "Visitors"
+permalink: /visitors/
+author_profile: true
+---
+
+{% include base_path %}
+
+{% assign stats = site.data.visitor_stats %}
+
+<p>Where the people reading this site come from, by country. Counts are unique visitors,
+collected with <a href="https://www.goatcounter.com/">GoatCounter</a> — no cookies, no
+cross-site tracking, no personal data. The map is regenerated from a static data file in
+this repository, so nothing is fetched from an analytics service when you load this page.</p>
+
+{% if stats.countries and stats.countries.size > 0 %}
+
+<div class="viz-root" id="visitor-map-root">
+
+  <div class="viz-summary">
+    <span class="viz-hero">{{ stats.total_visitors }}</span>
+    <span class="viz-hero-label">visitors from {{ stats.country_count }} countries{% if stats.updated %} · updated {{ stats.updated }}{% endif %}</span>
+  </div>
+
+  <figure class="viz-figure">
+    <div class="viz-map-wrap">
+      <svg id="visitor-map" role="img" aria-label="World map shading each country by number of visitors"></svg>
+      <div id="visitor-tooltip" class="viz-tooltip" hidden></div>
+    </div>
+    <figcaption class="viz-legend" id="visitor-legend" aria-hidden="true"></figcaption>
+  </figure>
+
+  <table class="viz-table">
+    <caption>Visitors by country{% if stats.period %} ({{ stats.period }}){% endif %}</caption>
+    <thead>
+      <tr><th scope="col">Country</th><th scope="col" class="num">Visitors</th></tr>
+    </thead>
+    <tbody>
+      {% for c in stats.countries limit: 15 %}
+      <tr><td>{{ c.name }}</td><td class="num">{{ c.visitors }}</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% if stats.countries.size > 15 %}
+  <p class="viz-note">Showing the top 15 of {{ stats.country_count }} countries.</p>
+  {% endif %}
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+<script>
+(function () {
+  var rows = {{ stats.countries | jsonify }};
+  var iso  = {{ site.data.iso_country_codes | jsonify }};
+
+  // visitors keyed by ISO 3166-1 numeric, which is what world-atlas uses as feature id
+  var byNumeric = {}, nameByNumeric = {};
+  rows.forEach(function (r) {
+    var num = iso[r.code];
+    if (!num) return;                       // e.g. XK (Kosovo) has no numeric code
+    byNumeric[num] = (byNumeric[num] || 0) + r.visitors;
+    nameByNumeric[num] = r.name;
+  });
+
+  // Sequential encoding: one hue, light -> dark. Thresholds rather than a linear
+  // scale because visitor counts are heavily skewed towards a few countries.
+  var BREAKS = [1, 2, 5, 20, 100, 500];
+  var BIN_LABELS = ["1", "2–4", "5–19", "20–99", "100–499", "500+"];
+
+  function styles() {
+    var cs = getComputedStyle(document.getElementById("visitor-map-root"));
+    return {
+      ramp: [1,2,3,4,5,6].map(function (i) { return cs.getPropertyValue("--seq-" + i).trim(); }),
+      noData: cs.getPropertyValue("--no-data").trim(),
+      sep: cs.getPropertyValue("--surface-1").trim(),
+      ocean: cs.getPropertyValue("--ocean").trim()
+    };
+  }
+
+  function binOf(v) {
+    if (!v) return -1;
+    var i = BREAKS.length - 1;
+    while (i > 0 && v < BREAKS[i]) i--;
+    return i;
+  }
+
+  var W = 960, H = 430;
+  var ANTARCTICA = "010";   // dropped: no visitors, and it eats the bottom of the frame
+  var svg = d3.select("#visitor-map")
+      .attr("viewBox", "0 0 " + W + " " + H)
+      .attr("preserveAspectRatio", "xMidYMid meet");
+  var tip = d3.select("#visitor-tooltip");
+
+  d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json").then(function (world) {
+    var countries = topojson.feature(world, world.objects.countries).features
+        .filter(function (d) { return d.id !== ANTARCTICA; });
+    // Equal Earth: an equal-area projection, so shaded areas stay comparable
+    var projection = d3.geoEqualEarth()
+        .fitSize([W, H], { type: "FeatureCollection", features: countries });
+    var path = d3.geoPath(projection);
+
+    function paint() {
+      var s = styles();
+      svg.selectAll("*").remove();
+
+      svg.append("rect")
+        .attr("width", W).attr("height", H)
+        .attr("fill", s.ocean);
+
+      svg.append("g").selectAll("path")
+        .data(countries)
+        .join("path")
+          .attr("d", path)
+          // 0.6px stroke in the surface colour keeps adjacent fills from merging
+          .attr("stroke", s.sep)
+          .attr("stroke-width", 0.6)
+          .attr("fill", function (d) {
+            var b = binOf(byNumeric[d.id]);
+            return b < 0 ? s.noData : s.ramp[b];
+          })
+          .attr("tabindex", function (d) { return byNumeric[d.id] ? 0 : null; })
+          .on("mousemove focus", function (event, d) {
+            var v = byNumeric[d.id];
+            if (!v) return;
+            var name = nameByNumeric[d.id] || (d.properties && d.properties.name) || "";
+            tip.attr("hidden", null)
+               .html("<b>" + name + "</b><br>" + v + (v === 1 ? " visitor" : " visitors"));
+            var wrap = document.querySelector(".viz-map-wrap").getBoundingClientRect();
+            var x = (event.clientX || wrap.left + wrap.width / 2) - wrap.left;
+            var y = (event.clientY || wrap.top + wrap.height / 2) - wrap.top;
+            tip.style("left", Math.min(Math.max(x + 12, 4), wrap.width - 150) + "px")
+               .style("top", Math.max(y - 44, 4) + "px");
+          })
+          .on("mouseleave blur", function () { tip.attr("hidden", true); });
+
+      var legend = d3.select("#visitor-legend");
+      legend.selectAll("*").remove();
+      legend.append("span").attr("class", "viz-legend-title").text("Visitors");
+      BIN_LABELS.forEach(function (label, i) {
+        var item = legend.append("span").attr("class", "viz-legend-item");
+        item.append("span").attr("class", "viz-swatch").style("background", s.ramp[i]);
+        item.append("span").text(label);
+      });
+      var none = legend.append("span").attr("class", "viz-legend-item");
+      none.append("span").attr("class", "viz-swatch").style("background", s.noData);
+      none.append("span").text("none");
+    }
+
+    paint();
+    if (window.matchMedia) {
+      var mq = window.matchMedia("(prefers-color-scheme: dark)");
+      (mq.addEventListener ? mq.addEventListener.bind(mq, "change") : mq.addListener.bind(mq))(paint);
+    }
+  }).catch(function () {
+    d3.select("#visitor-map").attr("hidden", true);
+    d3.select("#visitor-legend").text("The map could not be loaded; the table below has the same data.");
+  });
+})();
+</script>
+
+{% else %}
+
+<p class="viz-note"><em>No visitor data yet.</em> Once <code>scripts/update_visitor_stats.py</code>
+has run against a GoatCounter site with recorded traffic, the map and the country table appear here.</p>
+
+{% endif %}
+
+<style>
+.viz-root {
+  color-scheme: light;
+  --surface-1: #fcfcfb;
+  --ocean: #f4f3ef;
+  --no-data: #e1e0d9;
+  --text-primary: #0b0b0b;
+  --text-secondary: #52514e;
+  --text-muted: #898781;
+  --hairline: rgba(11, 11, 11, 0.10);
+  /* sequential blue ramp, light -> dark */
+  --seq-1: #cde2fb; --seq-2: #9ec5f4; --seq-3: #6da7ec;
+  --seq-4: #3987e5; --seq-5: #256abf; --seq-6: #104281;
+}
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) .viz-root {
+    color-scheme: dark;
+    --surface-1: #1a1a19;
+    --ocean: #141413;
+    --no-data: #2c2c2a;
+    --text-primary: #ffffff;
+    --text-secondary: #c3c2b7;
+    --text-muted: #898781;
+    --hairline: rgba(255, 255, 255, 0.10);
+    /* stepped for the dark surface: near-zero recedes, magnitude brightens */
+    --seq-1: #0d366b; --seq-2: #184f95; --seq-3: #256abf;
+    --seq-4: #3987e5; --seq-5: #6da7ec; --seq-6: #9ec5f4;
+  }
+}
+:root[data-theme="dark"] .viz-root {
+  color-scheme: dark;
+  --surface-1: #1a1a19;
+  --ocean: #141413;
+  --no-data: #2c2c2a;
+  --text-primary: #ffffff;
+  --text-secondary: #c3c2b7;
+  --text-muted: #898781;
+  --hairline: rgba(255, 255, 255, 0.10);
+  --seq-1: #0d366b; --seq-2: #184f95; --seq-3: #256abf;
+  --seq-4: #3987e5; --seq-5: #6da7ec; --seq-6: #9ec5f4;
+}
+
+.viz-root { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+.viz-summary { display: flex; align-items: baseline; gap: 0.5em; flex-wrap: wrap; margin: 1.2em 0 0.6em; }
+.viz-hero { font-size: 2.1rem; font-weight: 700; color: var(--text-primary); line-height: 1; }
+.viz-hero-label { font-size: 0.9rem; color: var(--text-secondary); }
+
+.viz-figure { margin: 0 0 1.4em; }
+.viz-map-wrap { position: relative; background: var(--ocean); border: 1px solid var(--hairline); border-radius: 6px; overflow: hidden; }
+#visitor-map { display: block; width: 100%; height: auto; }
+
+.viz-tooltip {
+  position: absolute; pointer-events: none; z-index: 5;
+  background: var(--surface-1); color: var(--text-primary);
+  border: 1px solid var(--hairline); border-radius: 5px;
+  padding: 5px 9px; font-size: 0.82rem; line-height: 1.35;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.13); white-space: nowrap;
+}
+#visitor-map path:focus { outline: 2px solid var(--text-primary); outline-offset: -1px; }
+
+.viz-legend { display: flex; align-items: center; gap: 0.85em; flex-wrap: wrap; margin-top: 0.6em; font-size: 0.8rem; color: var(--text-secondary); }
+.viz-legend-title { color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; font-size: 0.72rem; }
+.viz-legend-item { display: inline-flex; align-items: center; gap: 0.35em; }
+.viz-swatch { width: 15px; height: 11px; border-radius: 2px; border: 1px solid var(--hairline); display: inline-block; }
+
+.viz-table { width: 100%; max-width: 420px; border-collapse: collapse; font-size: 0.9rem; }
+.viz-table caption { text-align: left; color: var(--text-muted); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; padding-bottom: 0.4em; }
+.viz-table th, .viz-table td { padding: 5px 8px; border-bottom: 1px solid var(--hairline); text-align: left; }
+.viz-table th { color: var(--text-secondary); font-weight: 600; }
+.viz-table .num { text-align: right; font-variant-numeric: tabular-nums; }
+.viz-note { font-size: 0.85rem; color: var(--text-muted); }
+
+@media (max-width: 600px) {
+  .viz-hero { font-size: 1.7rem; }
+  .viz-legend { gap: 0.6em; font-size: 0.75rem; }
+}
+</style>
