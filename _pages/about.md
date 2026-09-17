@@ -10,17 +10,22 @@ redirect_from:
 
 *"To establish a unifying framework that connects theoretical tensor-network tools with experimental quantum computing platforms, enabling robust characterization and control of open-system quantum phases."*
 
-I'm a **third-year Ph.D. student** in the [Department of Physics](https://www.phys.tsinghua.edu.cn/), [Tsinghua University](https://www.tsinghua.edu.cn/), working on tensor-network approaches to **quantum computation**, **open quantum systems**, and **topological phases**. My long-term goal is to develop theoretical and experimental strategies to characterize and control quantum phases in realistic noisy quantum systems. I am very fortunate to be advised by **Prof. Shuo Yang** ([homepage](https://sites.google.com/view/shuoyang1984)).
+I'm a **fourth-year Ph.D. student** in the [Department of Physics](https://www.phys.tsinghua.edu.cn/), [Tsinghua University](https://www.tsinghua.edu.cn/), working on tensor-network approaches to **quantum computation**, **open quantum systems**, and **topological phases**. My long-term goal is to develop theoretical and experimental strategies to characterize and control quantum phases in realistic noisy quantum systems. I am very fortunate to be advised by **Prof. Shuo Yang** ([homepage](https://sites.google.com/view/shuoyang1984)).
+
+I am based in Beijing, and am in Hong Kong from September 2026 to January 2027 as a Junior Research Assistant at the Chinese University of Hong Kong. Beyond academia, I have built quantum software in a startup setting and worked on quantitative research in finance — see [Industry](/industry/).
 ### Research Focus
 - Developing new quantum computation techniques  
 - Discovering novel topological quantum matter  
 - Exploring the interplay between noise/dissipation and entanglement
+- Rigorous analysis of quantum algorithms, including cryptographic applications
 
 ## News / Updates
-- **Oct 2025** — Oral presentation at **APPC16** (Asia Pacific Physics Conference).  
-<!-- - **Mar–Aug 2026 (planned)** — Visiting student at **Max Planck Institute of Quantum Optics (MPQ)** with **Prof. J. I. Cirac**.   -->
-- **Recent honors** — **National Scholarship for Ph.D. Students**; **NSFC Young Student Basic Research Project**.  
-- **Manuscript status** — Our paper on imaginary-time Lindbladian framework is published by **Reports on Progress in Physics**.
+- **Sep 2026** — Our theory–experiment collaboration on non-Hermitian parent Hamiltonians is published in **Phys. Rev. Lett. 137, 110401** — the first experimental realization of NH parent Hamiltonians, with **Prof. Peng Xue**'s group.  
+- **Sep 2026 – Jan 2027** — Visiting the **Chinese University of Hong Kong** as a Junior Research Assistant.  
+- **2026** — Accepted an offer from **Optiver** as a quantitative research intern (summer 2027), following their PhD QuantFocus programme.  
+- **Feb – Aug 2026** — Served as **Founding Partner and Head of Quantum Algorithms** at **FieldQuantum**, a venture-backed quantum computing startup.  
+- **2025** — **National Scholarship for Ph.D. Students**; **NSFC Young Student Basic Research Project**.  
+- **New preprints** — Quantum criticality in open systems from the purification perspective ([arXiv:2602.21979](https://arxiv.org/abs/2602.21979)); tensor-network readout error mitigation ([arXiv:2606.25974](https://arxiv.org/abs/2606.25974)); rigorous lemmas for Simon's dihedral-coset algorithm ([arXiv:2608.16598](https://arxiv.org/abs/2608.16598)).
 
 ## Selected Publications
 
@@ -37,7 +42,7 @@ I'm a **third-year Ph.D. student** in the [Department of Physics](https://www.ph
 
 ## CV · Service · Contact
 
-- 📄 **[Full CV (PDF)](/assets/CV.pdf)** — last updated Oct 2025  
+- 📄 **[Full CV (PDF)](/assets/CV.pdf)** — last updated Sep 2026  
 - 📝 **Academic Service**: Referee for *PRX, PRL, PRX Quantum, PRR, PRA, PRB*  
 - 🌍 **Profiles**:  
   [Email](mailto:guo-yc23@mails.tsinghua.edu.cn) · 
