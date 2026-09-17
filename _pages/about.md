@@ -12,7 +12,7 @@ redirect_from:
 
 I'm a **fourth-year Ph.D. student** in the [Department of Physics](https://www.phys.tsinghua.edu.cn/), [Tsinghua University](https://www.tsinghua.edu.cn/), working on tensor-network approaches to **quantum computation**, **open quantum systems**, and **topological phases**. My long-term goal is to develop theoretical and experimental strategies to characterize and control quantum phases in realistic noisy quantum systems. I am very fortunate to be advised by **Prof. Shuo Yang** ([homepage](https://sites.google.com/view/shuoyang1984)).
 
-I am based in Beijing, and am in Hong Kong from September 2026 to January 2027 as a Junior Research Assistant at the Chinese University of Hong Kong. Beyond academia, I have built quantum software in a startup setting and worked on quantitative research in finance — see [Industry](/industry/).
+I am based in Beijing, and am in Hong Kong from September 2026 to January 2027 as a Junior Research Assistant at the Chinese University of Hong Kong.
 ### Research Focus
 - Developing new quantum computation techniques  
 - Discovering novel topological quantum matter  
@@ -22,8 +22,6 @@ I am based in Beijing, and am in Hong Kong from September 2026 to January 2027 a
 ## News / Updates
 - **Sep 2026** — Our theory–experiment collaboration on non-Hermitian parent Hamiltonians is published in **Phys. Rev. Lett. 137, 110401** — the first experimental realization of NH parent Hamiltonians, with **Prof. Peng Xue**'s group.  
 - **Sep 2026 – Jan 2027** — Visiting the **Chinese University of Hong Kong** as a Junior Research Assistant.  
-- **2026** — Accepted an offer from **Optiver** as a quantitative research intern (summer 2027), following their PhD QuantFocus programme.  
-- **Feb – Aug 2026** — Served as **Founding Partner and Head of Quantum Algorithms** at **FieldQuantum**, a venture-backed quantum computing startup.  
 - **2025** — **National Scholarship for Ph.D. Students**; **NSFC Young Student Basic Research Project**.  
 - **New preprints** — Quantum criticality in open systems from the purification perspective ([arXiv:2602.21979](https://arxiv.org/abs/2602.21979)); tensor-network readout error mitigation ([arXiv:2606.25974](https://arxiv.org/abs/2606.25974)); rigorous lemmas for Simon's dihedral-coset algorithm ([arXiv:2608.16598](https://arxiv.org/abs/2608.16598)).
 
