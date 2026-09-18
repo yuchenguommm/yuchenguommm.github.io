@@ -20,7 +20,8 @@ this repository, so nothing is fetched from an analytics service when you load t
 
   <div class="viz-summary">
     <span class="viz-hero">{{ stats.total_visitors }}</span>
-    <span class="viz-hero-label">visitors from {{ stats.country_count }} countries{% if stats.updated %} · updated {{ stats.updated }}{% endif %}</span>
+    <span class="viz-hero-label">{% if stats.total_visitors == 1 %}visitor{% else %}visitors{% endif %}
+      from {{ stats.country_count }} {% if stats.country_count == 1 %}country{% else %}countries{% endif %}{% if stats.updated %} · updated {{ stats.updated }}{% endif %}</span>
   </div>
 
   <figure class="viz-figure">
