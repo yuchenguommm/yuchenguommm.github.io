@@ -22,6 +22,11 @@
 
 {% if site.goatcounter_code and site.goatcounter_code != "" %}
 <!-- Privacy-friendly analytics by GoatCounter; feeds the visitor map at /visitors/ -->
+<!-- count.js is self-hosted: gc.zgo.at is unreachable from some networks, which
+     silently drops those visitors. Verified byte-identical to GoatCounter's
+     official count.v5.js (sha384-atnOLvQb9t+jTSipvd75X2yginT4PjVbqDdlJAmxMm+wYElFmeR6EmLP5bYeoRVQ).
+     The /count endpoint it reports to is guaranteed compatible; the tradeoff is
+     that updates to count.js must be pulled in by hand. -->
 <script data-goatcounter="https://{{ site.goatcounter_code }}.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+        async src="{{ base_path }}/assets/js/count.js"></script>
 {% endif %}
